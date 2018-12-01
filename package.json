@@ -1,0 +1,21 @@
+{
+  "name": "spars-checkout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/bbox": "git+https://github.com/Turfjs/turf.git#v5.1.6::packages/turf-bbox",
+    "@turf/area": "git+https://github.com/Turfjs/turf.git#v5.1.6::packages/turf-area"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.11",
+    "git-sparse-checkout": "^0.1.0",
+    "typescript": "^3.2.1"
+  }
+}
