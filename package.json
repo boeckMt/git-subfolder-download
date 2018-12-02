@@ -1,21 +1,22 @@
 {
-  "name": "spars-checkout",
+  "name": "git-subfolder-download",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "downloads a subfolder from git with a clone to a .tmp folder and moves the folder to a specific path",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"tsc"
+    "build": "tsc -w",
+    "prepublish": "tsc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@turf/bbox": "git+https://github.com/Turfjs/turf.git#v5.1.6::packages/turf-bbox",
-    "@turf/area": "git+https://github.com/Turfjs/turf.git#v5.1.6::packages/turf-area"
+    "commander": "^2.19.0",
+    "fs-extra": "^7.0.1"
   },
   "devDependencies": {
     "@types/node": "^10.12.11",
-    "git-sparse-checkout": "^0.1.0",
     "typescript": "^3.2.1"
   }
 }

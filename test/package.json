@@ -1,0 +1,10 @@
+{
+    "name": "git-subfolder-download",
+    "version": "1.0.0",
+    "description": "downloads a subfolder from git with a clone to a .tmp folder and moves the folder to a specific path",
+    "author": "",
+    "license": "ISC",
+    "gitDependencies": {
+      "@my/log": "git+https://github.com/boeckMt/node-browser-log.git#master::test"
+    }
+  }
